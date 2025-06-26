@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                        <div class="logo-placeholder">
+                            <img src="./Images/logo.svg"/>
+                        </div>
+                <button class="theme-btn">
+                    <div class="theme-icon">
+                        <img src="./Images/icon-sun.svg"/>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="content-header">
+                <h2>Extensions List</h2>
+                <div class="filter-toggle-tabs">
+                    <button class="toggle-btn active" data-filter="all">All</button>
+                    <button class="toggle-btn" data-filter="active">Active</button>
+                    <button class="toggle-btn" data-filter="inactive">Inactive</button>
+                </div>
+            </div>
+
+            <div class="extensions">
+                <div class="extension-card" data-status="active">
+                    <div class="extension-info">
+                        <div class="extension-icon blue-icon">
+                            <img src="./Images/logo-devlens.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>DevLens</h3>
+                            <p>Quickly inspect page layouts and visualize element boundaries.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="active">
+                    <div class="extension-info">
+                        <div class="extension-icon teal-icon">
+                            <img src="./Images/logo-style-spy.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>StyleSpy</h3>
+                            <p>Instantly analyze and copy CSS from any webpage element.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="inactive">
+                    <div class="extension-info">
+                        <div class="extension-icon pink-icon">
+                            <img src="./Images/logo-speed-boost.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>SpeedBoost</h3>
+                            <p>Optimizes browser resource usage to accelerate page loading.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="active">
+                    <div class="extension-info">
+                        <div class="extension-icon purple-icon">
+                            <img src="./Images/logo-json-wizard.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>JSONWizard</h3>
+                            <p>Formats, validates, and prettifies JSON responses in-browser.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="active">
+                    <div class="extension-info">
+                        <div class="extension-icon blue-gray-icon">
+                            <img src="./Images/logo-tab-master-pro.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>TabMaster Pro</h3>
+                            <p>Organizes browser tabs into groups and sessions.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="inactive">
+                    <div class="extension-info">
+                        <div class="extension-icon light-blue-icon">
+                            <img src="./Images/logo-viewport-buddy.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>ViewportBuddy</h3>
+                            <p>Simulates various screen resolutions directly within the browser.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="active">
+                    <div class="extension-info">
+                        <div class="extension-icon cyan-icon">
+                           <img src="./Images/logo-markup-notes.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>Markup Notes</h3>
+                            <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="inactive">
+                    <div class="extension-info">
+                        <div class="extension-icon grid-icon">
+                            <img src="./Images/logo-grid-guides.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>GridGuides</h3>
+                            <p>Overlay customizable grids and alignment guides on any webpage.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                         <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="active">
+                    <div class="extension-info">
+                        <div class="extension-icon green-icon">
+                            <img src="./Images/logo-palette-picker.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>Palette Picker</h3>
+                            <p>Instantly extracts color palettes from any webpage.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="active">
+                    <div class="extension-info">
+                        <div class="extension-icon orange-icon">
+                            <img src="./Images/logo-link-checker.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>LinkChecker</h3>
+                            <p>Scans and highlights broken links on any page.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="inactive">
+                    <div class="extension-info">
+                        <div class="extension-icon dark-teal-icon">
+                            <img src="./Images/logo-dom-snapshot.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>DOM Snapshot</h3>
+                            <p>Capture and export DOM structures quickly.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="active">
+                    <div class="extension-info">
+                        <div class="extension-icon console-icon">
+                            <img src="./Images/logo-console-plus.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>ConsolePlus</h3>
+                            <p>Enhanced developer console with advanced filtering and logging.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <!-- <div class="toggle-switch active"> -->
+                            <!-- Labels are essential for toggle switches because they clearly communicate the switch's function and current state, making them understandable and usable for users. -->
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+                            <h3>LinkChecker</h3>
+                            <p>Scans and highlights broken links on any page.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="inactive">
+                    <div class="extension-info">
+                        <div class="extension-icon dark-teal-icon">
+                            <img src="./Images/logo-dom-snapshot.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>DOM Snapshot</h3>
+                            <p>Capture and export DOM structures quickly.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="extension-card" data-status="active">
+                    <div class="extension-info">
+                        <div class="extension-icon console-icon">
+                            <img src="./Images/logo-console-plus.svg"/>
+                        </div>
+                        <div class="extension-details">
+                            <h3>ConsolePlus</h3>
+                            <p>Enhanced developer console with advanced filtering and logging.</p>
+                        </div>
+                    </div>
+                    <div class="extension-control">
+                        <button class="remove-btn">Remove</button>
+                        <!-- <div class="toggle-switch active"> -->
+                            <!-- Labels are essential for toggle switches because they clearly communicate the switch's function and current state, making them understandable and usable for users. -->
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

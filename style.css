@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f1419 100%);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 16px 24px;
+    margin-bottom: 32px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.theme-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.theme-btn:focus{
+    border: 2px solid #f13333;
+}
+
+.theme-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.content-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.filter-toggle-tabs {
+    display: flex;
+    gap: 8px;
+}
+
+.toggle-btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.toggle-btn:focus{
+    border: 2px solid #f13333;
+}
+
+.toggle-btn.active {
+    background: #ff6b6b;
+    color: #ffffff;
+}
+
+.toggle-btn:not(.active):hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.extensions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.extension-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.extension-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.extension-info {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.extension-details{
+    padding-left: 10px;
+}
+
+.extension-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.blue-icon { background: linear-gradient(45deg, #3b82f6, #1d4ed8); }
+.teal-icon { background: linear-gradient(45deg, #14b8a6, #0f766e); }
+.pink-icon { background: linear-gradient(45deg, #ec4899, #be185d); }
+.purple-icon { background: linear-gradient(45deg, #a855f7, #7c3aed); }
+.blue-gray-icon { background: linear-gradient(45deg, #64748b, #475569); }
+.light-blue-icon { background: linear-gradient(45deg, #06b6d4, #0891b2); }
+.cyan-icon { background: linear-gradient(45deg, #22d3ee, #0891b2); }
+.grid-icon { background: linear-gradient(45deg, #8b5cf6, #7c3aed); }
+.green-icon { background: linear-gradient(45deg, #10b981, #059669); }
+.orange-icon { background: linear-gradient(45deg, #f59e0b, #d97706); }
+.dark-teal-icon { background: linear-gradient(45deg, #0f766e, #115e59); }
+.console-icon { background: linear-gradient(45deg, #22c55e, #16a34a); }
+
+.extension-details h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.extension-details p {
+    font-size: 14px;
+    color: #a0a0a0;
+    line-height: 1.5;
+}
+
+.extension-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50px;
+    padding: 8px 16px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background  0.2s ease;
+    border: 1px solid rgb(117, 97, 97);
+}
+
+.remove-btn:hover {
+    background: #ff6b6b;
+    border: 2px solid #ff6b6b;
+}
+
+.remove-btn:focus{
+    border: 2px solid #f13333;
+}
+
+/* .toggle-switch {
+    width: 48px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.toggle-switch.active {
+    background: #ff6b6b;
+}
+
+.toggle-slider {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+
+.toggle-switch.active .toggle-slider {
+    transform: translateX(24px);
+} */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.switch input[type="checkbox"]:focus + .slider {
+    outline: 2px solid #f13333;
+    outline-offset: 2px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  top: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .3s ease;
+}
+
+input:checked + .slider {
+  background-color: #ff6b6b;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff6b6b;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 16px;
+    }
+    
+    .content-header {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    
+    .extensions {
+        grid-template-columns: 1fr;
+    }
+    
+    .extension-card {
+        padding: 16px;
+    }
+}
+
+.extension-card.hidden {
+    display: none;
+}
+
+.extension-card.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
